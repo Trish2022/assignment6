@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <script src="js/add-employee.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="m-3">
+    <h2>Add Employee</h2>
+    <form id="empForm">
+        <label for="id">8-Digit Employee ID</label><br>
+        <input type="text" maxlength="8" required id="id"><br>
+        
+        <label for="name">Full Name</label><br>
+        <input type="text" required id="name"><br>
+        
+        <label for="extension">4-Digit Extension</label><br>
+        <input type="text" maxlength="4" required id="extension"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" required id="email"><br>
+        
+        <label for="department">Department</label><br>
+        <select id="department" required>
+            <option value="administrative">Administrative</option>
+            <option value="engineering">Engineering</option>
+            <option value="executive">Executive</option>
+            <option value="marketing">Marketing</option>
+            <option value="qa">Quality Assurance</option>
+            <option value="sales">Sales</option>
+        </select><br><br>
+
+        <input type="submit" class="btn btn-primary" name="submit" id="submit" value="Add Employee">
+        <input type="button" class="btn btn-primary" name="cancel" id="cancel" value="Cancel">        
+    </form>
+</body>
+</html>

@@ -1,0 +1,4 @@
+h1 {margin-bottom: 30px;}
+label {font-weight: bold;}
+input, select {margin-bottom: 10px;}
+form {width: 100%; background: #ededed; padding: 20px; border: 3px solid coral}
